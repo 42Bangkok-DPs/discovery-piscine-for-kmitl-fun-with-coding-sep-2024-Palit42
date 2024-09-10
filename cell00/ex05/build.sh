@@ -1,10 +1,7 @@
-if [ $# -eq 0 ]
-then
-	echo "No arguments supplied";
-	exit;
+if [ $# -eq 0 ]; then
+  echo "No arguments supplied"
+else
+  for arg  in "$@"; do
+    mkdir "ex${arg}"
+  done
 fi
-
-for i in "$@";
-do
-	mkdir "ex$i";
-done
