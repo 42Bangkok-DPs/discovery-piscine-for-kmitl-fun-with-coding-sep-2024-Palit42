@@ -3,34 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tab</title>
-</head>
-<style>
-    section{
-        display: flex;
-    }
-    div{
-        flex: 1;
-        border: 1px solid black;
-        padding: 100px 0 100px 0;
-        font-size: 32px;
-    }
-        div:nth-child(1){
+    <title>tap</title>
+    <style>
+        table{
+            width: 100%;
+            border-collapse: collapse;
+        }
+        td {
+            padding: 20px;
+            text-align: left;
+            font-size: 18px;
+            border: 1px solid black;
+        }
+        .first-cell{
             background-color: red;
         }
-        div:nth-child(2){
-            background-color: blue;
+        .second-cell{
+            background-color: blue
         }
-</style>
+    </style>
+</head>
 <body>
-    <hr>
-    <section>
-        <div>
-            FIRST
-        </div>
-        <div>
-            SECOND
-        </div>
-    </section>
+    <table>
+        <tr>
+            <td class = "first-cell"> FIRST</td>
+            <td class = "second-cell"> SECOND </td>
+        </tr>
+    </table>
 </body>
 </html>
