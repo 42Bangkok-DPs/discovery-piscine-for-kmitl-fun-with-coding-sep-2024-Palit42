@@ -11,8 +11,8 @@ div{
     align-items: center; 
 }
     div:nth-child(1){
-        background-color: brown;
+        background-color: red;
     }
     div:nth-child(2){
-        background-color: green;
+        background-color: blue;
     }
