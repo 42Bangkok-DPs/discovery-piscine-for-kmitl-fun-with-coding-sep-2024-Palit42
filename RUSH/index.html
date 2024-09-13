@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>index</title>
+  <style>
+    body {
+      background-image: url('bg1.png');
+      background-size: cover;
+      margin: 0;
+      padding: 0;
+    }
+
+    .sticky {
+      position: fixed;
+      top: 20px;
+      width: 200px;
+      background-color: rgb(15, 169, 200);
+      z-index: 100;
+    }
+
+    .image-container {
+      margin: 20px 0;
+      text-align: center;
+    }
+
+    .image-container a {
+      display: inline-block;
+      margin: 10px 50px;
+      align-items: center;
+      width: 300px;
+      height: auto;
+    }
+
+    .image-container img {
+      width: 300px;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .image-container p {
+      text-align: center;
+      width: 300px;
+      background-color: white;
+    }
+
+    .footer {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      color: rgb(84, 229, 48);
+      text-align: right;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="sticky">
+    <h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Navigation</h1>
+    <nav>
+      <ul>
+        <li><a href="#top" style="color:black;">Home</a></li>
+        <li><a href="#project" style="color:black;">Project Description</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <a name="top">
+    <h1 style="text-align: center; background-color: blanchedalmond;">Portfolio</h1>
+  </a>
+
+  <div class="image-container">
+    <a href="port01.html">
+      <img src="images/3.png" alt="Image 1 description">
+      <p>Prem Portfolio</p>
+    </a>
+    <a href="port02.html">
+      <img src="images/Profile-Port.jpg" alt="Image 2 description">
+      <p>Tae's Portfolio</p>
+    </a>
+  </div>
+
+  <a name="project"></a>
+
+</body>
+
+</html>
