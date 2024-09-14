@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Change background</title>
     <link rel="stylesheet" href="backgroound.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
 </head>
 <body>
     <button id="colorButton">Change Background Color</button>
@@ -18,10 +19,11 @@
             }
             return color;
         }
+
         function changeBackgroundColor() {
-            document.body.style.backgroundColor = getRandomColor();
+            $('body').css('background-color', getRandomColor());  
         }
-        document.getElementById('colorButton').addEventListener('click', changeBackgroundColor);
+        $('#colorButton').on('click', changeBackgroundColor);
     </script>
 </body>
 </html>
